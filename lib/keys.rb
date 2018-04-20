@@ -9,10 +9,13 @@ groceries = {
 }
 
 def get_the_keys(groceries)
+  array = []
  groceries.each do |key, val|
-    key.each_key do |sym|
-     puts "#{sym}"
+    string_key = key.to_s 
+    string_key.each_key do |sym|
+    array.push(sym)
  end
 end
+  array
 end
 
