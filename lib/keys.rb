@@ -11,8 +11,7 @@ groceries = {
 def get_the_keys(groceries)
     array = []
  groceries.each do |key, val|
-     list = key.to_s 
-    array.push(list)
+    array.push(key)
  end
   array
 end
